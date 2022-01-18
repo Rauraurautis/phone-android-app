@@ -1,10 +1,12 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Image } from 'react-native';
+import doggo from "./doggo.jpg"
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <Text style={{paddingBottom: 15}}>Hello, world!</Text>
+      <Image source={doggo} style={{width: 305, height: 159}}></Image>
       <StatusBar style="auto" />
     </View>
   );
